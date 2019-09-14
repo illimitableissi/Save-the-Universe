@@ -1,10 +1,11 @@
 var targetNumbers = [40, 55, 79, 120, 20, 65, 88, 30, 100]
 var stoneValues = [1,2,3,4,5,6,7,8,9,10,11,12]
+debugger;
 
 var guessedNumber = targetNumbers[Math.floor(Math.random() * targetNumbers.length)];
 var stoneValue = stoneValues[Math.floor(Math.random() * stoneValues.length)];
 
-$(".guessed-number").text(guessedNumber)
+$(".guessed-number").html(guessedNumber)
 $(".total-number").text(counter)
 
 
@@ -40,13 +41,6 @@ if (counter === targetNumber) {
     $(".losses").html("Losses: " + " " + losses)
     startGame()
 }
+}
 
 startGame()
-
-
-
-
-
-
-
-}
