@@ -48,7 +48,7 @@ $(document).ready(function() {
 
         if(wins === 4){
             alert("You win. The universe is saved!!");
-            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+            $("#stones").html("<img src = './assets/images/Thanos.gif'>")
 
         }
         if(losses === 1){
@@ -65,7 +65,7 @@ $(document).ready(function() {
 
         if(losses === 4){
             alert(".....Doom");
-            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+            $("#stones").html("<img src = './assets/images/Snap.gif'>")
         }
         
 
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
         if(wins === 4){
             alert("You win. The universe is saved!!");
-            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+            $("#stones").html("<img src = './assets/images/Thanos.gif'>")
 
         }
         if(losses === 1){
@@ -108,7 +108,7 @@ $(document).ready(function() {
 
         if(losses === 4){
             alert(".....Doom");
-            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+            $("#stones").html("<img src = './assets/images/Snap.gif'>")
         }
         
     });
@@ -132,7 +132,7 @@ $(document).ready(function() {
         }
         if(wins === 4){
             alert("You win. The universe is saved!!");
-            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+            $("#stones").html("<img src = './assets/images/Thanos.gif'>")
 
         }
         if(losses === 1){
@@ -149,7 +149,7 @@ $(document).ready(function() {
 
         if(losses === 4){
             alert(".....Doom");
-            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+            $("#stones").html("<img src = './assets/images/Snap.gif'>")
         }
         
     });
@@ -175,7 +175,7 @@ $(document).ready(function() {
 
         if(wins === 4){
             alert("You win. The universe is saved!!");
-            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+            $("#stones").html("<img src = './assets/images/Thanos.gif'>")
 
         }
         if(losses === 1){
@@ -192,7 +192,7 @@ $(document).ready(function() {
 
         if(losses === 4){
             alert(".....Doom");
-            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+            $("#stones").html("<img src = './assets/images/Snap.gif'>")
         }
         
     });
