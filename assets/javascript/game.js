@@ -14,17 +14,17 @@ $(".losses").html("Losses: " + " " + losses)
 
 $(document).ready(function() {
 
-    var guessedNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+    guessedNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
     console.log(guessedNumber)
 
     $(".guessed-number").html(guessedNumber);
     wins = 0;
     losses = 0;  
     counter = 0;
-    var stoneValueOne = Math.floor(Math.random() * 12) + 1;
-    var stoneValueTwo = Math.floor(Math.random() * 12) + 1;
-    var stoneValueThree = Math.floor(Math.random() * 12) + 1;
-    var stoneValueFour = Math.floor(Math.random() * 12) + 1;
+    stoneValueOne = Math.floor(Math.random() * 12) + 1;
+    stoneValueTwo = Math.floor(Math.random() * 12) + 1;
+    stoneValueThree = Math.floor(Math.random() * 12) + 1;
+    stoneValueFour = Math.floor(Math.random() * 12) + 1;
 
 
     $("#stone1").on("click", function() {
@@ -39,11 +39,27 @@ $(document).ready(function() {
             $(".wins").html("Wins: " + " " + wins);
             
         } else if (counter >= guessedNumber) {
-            alert("You lost. Thanos has acquired annother Infinity stone!!!!");
+            alert("You lost. Thanos has acquired another Infinity stone!!!!");
             losses++;
             reset();
             $(".losses").html("Losses: " + " " + losses)
             
+        }
+        if(losses === 1){
+            $("#stone1").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 2){
+            $("#stone2").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 3){
+            $("#stone3").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 4){
+            alert(".....Doom");
+            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
         }
         
 
@@ -66,6 +82,22 @@ $(document).ready(function() {
             $(".losses").html("Losses: " + " " + losses)
             
         }
+        if(losses === 1){
+            $("#stone1").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 2){
+            $("#stone2").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 3){
+            $("#stone3").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 4){
+            alert(".....Doom");
+            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+        }
         
     });
     
@@ -87,6 +119,22 @@ $(document).ready(function() {
             $(".losses").html("Losses: " + " " + losses);
             
         }
+        if(losses === 1){
+            $("#stone1").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 2){
+            $("#stone2").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 3){
+            $("#stone3").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 4){
+            alert(".....Doom");
+            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
+        }
         
     });
     
@@ -107,6 +155,22 @@ $(document).ready(function() {
             $(".losses").html("Losses: " + " " + losses);
             reset();
             
+        }
+        if(losses === 1){
+            $("#stone1").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 2){
+            $("#stone2").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 3){
+            $("#stone3").animate({ opacity: "0.30" });
+        }
+
+        if(losses === 4){
+            alert(".....Doom");
+            $("#stones").html("<img src = '/assets/images/Snap.gif'>")
         }
         
     });
