@@ -46,3 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.stones{
+    height: 200px;
+    width: 200px
+}
+
+body{
+    background-image: url(/assets/images/galaxy.jpg)
+}
+
+.card{
+    margin: 10px
+}
