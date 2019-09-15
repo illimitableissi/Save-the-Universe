@@ -33,7 +33,7 @@ $(document).ready(function() {
         $(".total-number").html(counter);
         console.log(stoneValueOne);
         if (counter === guessedNumber) {
-            alert("You win. The universe is saved!!");
+            alert("You win. Keep it up!");
             wins++;
             reset();
             $(".wins").html("Wins: " + " " + wins);
@@ -44,6 +44,12 @@ $(document).ready(function() {
             reset();
             $(".losses").html("Losses: " + " " + losses)
             
+        }
+
+        if(wins === 4){
+            alert("You win. The universe is saved!!");
+            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+
         }
         if(losses === 1){
             $("#stone1").animate({ opacity: "0.30" });
@@ -71,7 +77,7 @@ $(document).ready(function() {
         $(".total-number").html(counter);
         console.log(stoneValueTwo);
         if (counter === guessedNumber) {
-            alert("You win. The universe is saved!!");
+            alert("You win. Keep it up!");
             wins++;
             reset();
             $(".wins").html("Wins: " + " " + wins)
@@ -81,6 +87,12 @@ $(document).ready(function() {
             reset();
             $(".losses").html("Losses: " + " " + losses)
             
+        }
+
+        if(wins === 4){
+            alert("You win. The universe is saved!!");
+            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+
         }
         if(losses === 1){
             $("#stone1").animate({ opacity: "0.30" });
@@ -107,7 +119,7 @@ $(document).ready(function() {
         $(".total-number").html(counter);
         console.log(stoneValueThree);
         if (counter === guessedNumber) {
-            alert("You win. The universe is saved!!");
+            alert("You win. Keep it up!");
             wins++;
             reset();
             $(".wins").html("Wins: " + " " + wins);
@@ -117,7 +129,11 @@ $(document).ready(function() {
             losses++;
             reset();
             $(".losses").html("Losses: " + " " + losses);
-            
+        }
+        if(wins === 4){
+            alert("You win. The universe is saved!!");
+            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+
         }
         if(losses === 1){
             $("#stone1").animate({ opacity: "0.30" });
@@ -144,7 +160,7 @@ $(document).ready(function() {
         $(".total-number").html(counter);
         console.log(stoneValueFour);
         if (counter === guessedNumber) {
-            alert("You win. The universe is saved!!");
+            alert("You win. Keep it up!");
             wins++;
             reset();
             $(".wins").html("Wins: " + " " + wins)
@@ -155,6 +171,12 @@ $(document).ready(function() {
             $(".losses").html("Losses: " + " " + losses);
             reset();
             
+        }
+
+        if(wins === 4){
+            alert("You win. The universe is saved!!");
+            $("#stones").html("<img src = '/assets/images/Thanos.gif'>")
+
         }
         if(losses === 1){
             $("#stone1").animate({ opacity: "0.30" });
