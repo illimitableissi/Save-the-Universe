@@ -1,10 +1,10 @@
 .stones{
     height: 200px;
-    width: 200px
+    width: 200px;
 }
 
 body{
-    background-image: url(/assets/images/galaxy.jpg)
+    background-image: url(../images/galaxy.jpg);
 }
 
 .card{
